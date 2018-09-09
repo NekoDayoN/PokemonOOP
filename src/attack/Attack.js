@@ -1,7 +1,7 @@
 const types = require('../types');
 
-function Attack() {
-    this.name = "";
+function Attack(name) {
+    this.name = name || "";
     this.power = 0;
     this.accuracy = 0;
     this.pp = 0;
