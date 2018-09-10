@@ -3,7 +3,8 @@ const types = {
     grass: 'grass',
     poison: 'poison',
     normal: 'normal',
-    fire: 'fire'
+    fire: 'fire',
+    water: 'water'
 };
 
 module.exports = types;
