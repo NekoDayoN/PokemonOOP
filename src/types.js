@@ -4,7 +4,8 @@ const types = {
     poison: 'poison',
     normal: 'normal',
     fire: 'fire',
-    water: 'water'
+    water: 'water',
+    bug: 'bug'
 };
 
 module.exports = types;
