@@ -5,8 +5,8 @@ const attacks = require('../attack/attacks');
 const { Tackle } = attacks;
 const { TailWhip } = attacks;
 
-function Squirtle() {
-    Pokemon.call(this, "Squirtle");
+function Squirtle(nickname) {
+    Pokemon.call(this, nickname || "Squirtle");
     this.types = [types.water];
     this.attacks = [new Tackle, new TailWhip];
     this.level = 1;

@@ -5,8 +5,8 @@ const attacks = require('../attack/attacks');
 const { Growl } = attacks;
 const { Scratch } = attacks;
 
-function Charmander() {
-    Pokemon.call(this, 'Charmander');
+function Charmander(nickname) {
+    Pokemon.call(this, nickname || 'Charmander');
     this.types = [types.fire];
     this.level = 1;
     this.hp = 39;
