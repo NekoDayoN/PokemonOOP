@@ -1,6 +1,7 @@
 const categories = {
     physical: "physical",
-    status: "status"
+    status: "status",
+    undefined: "???"
 }
 
 module.exports = categories;

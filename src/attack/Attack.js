@@ -1,4 +1,5 @@
 const types = require('../types');
+const categories = require('./categories');
 
 function Attack(name) {
     this.name = name || "";
@@ -6,6 +7,7 @@ function Attack(name) {
     this.accuracy = 0;
     this.pp = 0;
     this.description = "";
+    this.category = categories.undefined;
     this.type = types.undefined;
 }
 
