@@ -4,6 +4,7 @@ const Squirtle = require('./Squirtle');
 const Caterpie = require('./Caterpie');
 const Weedle = require('./Weedle');
 const Pidgey = require('./Pidgey');
+const Rattata = require('./Rattata');
 
 module.exports = {
     Bulbasaur,
@@ -11,5 +12,6 @@ module.exports = {
     Squirtle,
     Caterpie,
     Weedle,
-    Pidgey
+    Pidgey,
+    Rattata
 }
