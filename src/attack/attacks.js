@@ -6,6 +6,7 @@ const Scratch = require('./Scratch');
 const TailWhip = require('./TailWhip');
 const StringShot = require('./StringShot');
 const PoisonSting = require('./PoisonSting');
+const Peck = require('./Peck');
 
 module.exports = {
     Attack,
@@ -14,5 +15,6 @@ module.exports = {
     Scratch,
     TailWhip,
     StringShot,
-    PoisonSting
+    PoisonSting,
+    Peck
 }
