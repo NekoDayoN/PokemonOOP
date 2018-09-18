@@ -7,6 +7,8 @@ const TailWhip = require('./TailWhip');
 const StringShot = require('./StringShot');
 const PoisonSting = require('./PoisonSting');
 const Peck = require('./Peck');
+const Leer = require('./Leer');
+const Wrap = require('./Wrap');
 
 module.exports = {
     Attack,
@@ -16,5 +18,7 @@ module.exports = {
     TailWhip,
     StringShot,
     PoisonSting,
-    Peck
+    Peck,
+    Leer,
+    Wrap
 }
