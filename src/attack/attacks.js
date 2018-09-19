@@ -9,6 +9,7 @@ const PoisonSting = require('./PoisonSting');
 const Peck = require('./Peck');
 const Leer = require('./Leer');
 const Wrap = require('./Wrap');
+const ThunderShock = require('./ThunderShock');
 
 module.exports = {
     Attack,
@@ -20,5 +21,6 @@ module.exports = {
     PoisonSting,
     Peck,
     Leer,
-    Wrap
+    Wrap,
+    ThunderShock
 }

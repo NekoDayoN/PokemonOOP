@@ -7,7 +7,8 @@ const types = {
     water: 'water',
     bug: 'bug',
     normal: 'normal',
-    flying: 'flying'
+    flying: 'flying',
+    eletric: 'eletric'
 };
 
 module.exports = types;
