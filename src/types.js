@@ -6,6 +6,7 @@ const types = {
     fire: 'fire',
     water: 'water',
     bug: 'bug',
+    ground: 'ground',
     normal: 'normal',
     flying: 'flying',
     eletric: 'eletric'
