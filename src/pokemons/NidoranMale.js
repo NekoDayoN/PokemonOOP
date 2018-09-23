@@ -2,19 +2,19 @@ const types = require('../types');
 const Pokemon = require('./Pokemon');
 const attacks = require('../attack/attacks');
 
-const { Growl, Scratch } = attacks;
+const { Leer, Peck } = attacks;
 
 function NidoranMale(nickname) {
     Pokemon.call(this, nickname || "Nidoran Male");
     this.types = [ types.poison ];
-    this.attacks = [ new Growl, new Scratch ];
+    this.attacks = [ new Leer, new Peck ];
     this.level = 1;
-    this.hp = 55;
-    this.attack = 47;
-    this.defense = 52;
+    this.hp = 46;
+    this.attack = 57;
+    this.defense = 40;
     this.spAttack = 40;
     this.spDefense = 40;
-    this.speed = 41;
+    this.speed = 50;
 }
 
 NidoranMale.prototype = Object.create(Pokemon.prototype);
