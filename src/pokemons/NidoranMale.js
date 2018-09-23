@@ -4,8 +4,8 @@ const attacks = require('../attack/attacks');
 
 const { Growl, Scratch } = attacks;
 
-function Nidoran(nickname) {
-    Pokemon.call(this, nickname || "Nidoran");
+function NidoranMale(nickname) {
+    Pokemon.call(this, nickname || "Nidoran Male");
     this.types = [ types.poison ];
     this.attacks = [ new Growl, new Scratch ];
     this.level = 1;
@@ -17,6 +17,6 @@ function Nidoran(nickname) {
     this.speed = 41;
 }
 
-Nidoran.prototype = Object.create(Pokemon.prototype);
+NidoranMale.prototype = Object.create(Pokemon.prototype);
 
-module.exports = Nidoran;
+module.exports = NidoranMale;
