@@ -9,6 +9,7 @@ const Spearow = require('./Spearow');
 const Ekans = require('./Ekans');
 const Pikachu = require('./Pikachu');
 const Sandshrew = require('./Sandshrew');
+const Nidoran = require('./Nidoran');
 
 module.exports = {
     Bulbasaur,
@@ -21,5 +22,6 @@ module.exports = {
     Spearow,
     Ekans,
     Pikachu,
-    Sandshrew
+    Sandshrew,
+    Nidoran
 }

@@ -5,10 +5,10 @@ const Attack = require('./Attack');
 function Growl() {
     Attack.call(this, "Growl");
     this.type = types.normal;
+    this.category = categories.status;
     this.power = 0;
     this.accuracy = 1.0;
     this.pp = 40;
-    this.categories = categories.status;
     this.description = "Lowers the target's Attack by one stage.";
 }
 
