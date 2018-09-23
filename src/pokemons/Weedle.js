@@ -2,13 +2,12 @@ const Pokemon = require('./Pokemon');
 const types = require('../types');
 const attacks = require('../attack/attacks');
 
-const { PoisonSting } = attacks;
-const { StringShot } = attacks;
+const { PoisonSting, StringShot } = attacks;
 
 function Weedle(nickname) {
     Pokemon.call(this, nickname || "Weedle");
-    this.types = [types.bug, types.poison];
-    this.attacks = [new PoisonSting,new StringShot];
+    this.types = [ types.bug, types.poison ];
+    this.attacks = [ new PoisonSting, new StringShot ];
     this.level = 1;
     this.hp = 40;
     this.attack = 35;

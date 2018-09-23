@@ -2,13 +2,12 @@ const Pokemon = require('./Pokemon');
 const types = require('../types');
 const attacks = require('../attack/attacks');
 
-const { TailWhip } = attacks;
-const { ThunderShock } = attacks;
+const { TailWhip, ThunderShock } = attacks;
 
 function Pikachu(nickname) {
     Pokemon.call(this, nickname || "Pikachu");
-    this.types = [types.eletric];
-    this.attacks = [new TailWhip,new ThunderShock];
+    this.types = [ types.eletric ];
+    this.attacks = [ new TailWhip, new ThunderShock ];
     this.level = 1;
     this.hp = 35;
     this.attack = 55;

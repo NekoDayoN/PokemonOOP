@@ -6,8 +6,8 @@ const { Growl, Scratch } = attacks;
 
 function Nidoran(nickname) {
     Pokemon.call(this, nickname || "Nidoran");
-    this.types = [types.poison];
-    this.attacks = [new Growl,new Scratch];
+    this.types = [ types.poison ];
+    this.attacks = [ new Growl, new Scratch ];
     this.level = 1;
     this.hp = 55;
     this.attack = 47;

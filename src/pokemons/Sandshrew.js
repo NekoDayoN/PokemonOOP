@@ -6,8 +6,8 @@ const { DefenseCurl, Scratch } = attacks;
 
 function Sandshrew(nickname) {
     Pokemon.call(this, nickname || "Sandshrew");
-    this.types = [types.ground];
-    this.attacks = [new DefenseCurl,new Scratch];
+    this.types = [ types.ground ];
+    this.attacks = [ new DefenseCurl, new Scratch ];
     this.level = 1;
     this.hp = 50;
     this.attack = 75;

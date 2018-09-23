@@ -5,8 +5,8 @@ const { Tackle } = require('../attack/attacks');
 
 function Pidgey(nickname) {
     Pokemon.call(this, nickname || "Pidgey");
-    this.types = [types.normal, types.flying];
-    this.attacks = [new Tackle];
+    this.types = [ types.normal, types.flying ];
+    this.attacks = [ new Tackle ];
     this.level = 1;
     this.hp = 40;
     this.attack = 45;

@@ -1,13 +1,12 @@
 const types = require('../types');
 const Pokemon = require('./Pokemon');
-
 const attacks = require('../attack/attacks');
-const { Growl } = attacks;
-const { Scratch } = attacks;
+
+const { Growl, Scratch } = attacks;
 
 function Charmander(nickname) {
     Pokemon.call(this, nickname || 'Charmander');
-    this.types = [types.fire];
+    this.types = [ types.fire ];
     this.level = 1;
     this.hp = 39;
     this.attack = 52;
@@ -15,7 +14,7 @@ function Charmander(nickname) {
     this.spAttack = 60;
     this.spDefense = 50;
     this.speed = 65;
-    this.attacks = [new Growl, new Scratch];
+    this.attacks = [ new Growl, new Scratch ];
 }
 
 Charmander.prototype = Object.create(Pokemon.prototype);
