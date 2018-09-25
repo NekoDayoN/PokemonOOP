@@ -11,6 +11,7 @@ const Pikachu = require('./Pikachu');
 const Sandshrew = require('./Sandshrew');
 const NidoranFemale = require('./NidoranFemale');
 const NidoranMale = require('./NidoranMale');
+const Clefairy = require('./Clefairy');
 
 module.exports = {
     Bulbasaur,
@@ -25,5 +26,6 @@ module.exports = {
     Pikachu,
     Sandshrew,
     NidoranFemale,
-    NidoranMale
+    NidoranMale,
+    Clefairy
 }

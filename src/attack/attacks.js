@@ -11,6 +11,7 @@ const Leer = require('./Leer');
 const Wrap = require('./Wrap');
 const ThunderShock = require('./ThunderShock');
 const DefenseCurl = require('./DefenseCurl');
+const Pound = require('./Pound');
 
 module.exports = {
     Attack,
@@ -24,5 +25,6 @@ module.exports = {
     Leer,
     Wrap,
     ThunderShock,
-    DefenseCurl
+    DefenseCurl,
+    Pound
 }
