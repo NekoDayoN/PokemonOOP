@@ -1,18 +1,19 @@
-const Bulbasaur = require('./Bulbasaur');
-const Charmander = require('./Charmander');
-const Squirtle = require('./Squirtle');
-const Caterpie = require('./Caterpie');
-const Weedle = require('./Weedle');
-const Pidgey = require('./Pidgey');
-const Rattata = require('./Rattata');
-const Spearow = require('./Spearow');
-const Ekans = require('./Ekans');
-const Pikachu = require('./Pikachu');
-const Sandshrew = require('./Sandshrew');
-const NidoranFemale = require('./NidoranFemale');
-const NidoranMale = require('./NidoranMale');
-const Clefairy = require('./Clefairy');
-const Vulpix = require('./Vulpix');
+const Bulbasaur = require('./Bulbasaur'),
+    Charmander = require('./Charmander'),
+    Squirtle = require('./Squirtle'),
+    Caterpie = require('./Caterpie'),
+    Weedle = require('./Weedle'),
+    Pidgey = require('./Pidgey'),
+    Rattata = require('./Rattata'),
+    Spearow = require('./Spearow'),
+    Ekans = require('./Ekans'),
+    Pikachu = require('./Pikachu'),
+    Sandshrew = require('./Sandshrew'),
+    NidoranFemale = require('./NidoranFemale'),
+    NidoranMale = require('./NidoranMale'),
+    Clefairy = require('./Clefairy'),
+    Vulpix = require('./Vulpix'),
+    Jigglypuff = require('./Jigglypuff');
 
 module.exports = {
     Bulbasaur,
@@ -29,5 +30,6 @@ module.exports = {
     NidoranFemale,
     NidoranMale,
     Clefairy,
-    Vulpix
+    Vulpix,
+    Jigglypuff
 }
