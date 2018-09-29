@@ -1,35 +1,22 @@
-const Bulbasaur = require('./Bulbasaur'),
-    Charmander = require('./Charmander'),
-    Squirtle = require('./Squirtle'),
-    Caterpie = require('./Caterpie'),
-    Weedle = require('./Weedle'),
-    Pidgey = require('./Pidgey'),
-    Rattata = require('./Rattata'),
-    Spearow = require('./Spearow'),
-    Ekans = require('./Ekans'),
-    Pikachu = require('./Pikachu'),
-    Sandshrew = require('./Sandshrew'),
-    NidoranFemale = require('./NidoranFemale'),
-    NidoranMale = require('./NidoranMale'),
-    Clefairy = require('./Clefairy'),
-    Vulpix = require('./Vulpix'),
-    Jigglypuff = require('./Jigglypuff');
+const PokemonHandler = require('./PokemonHandler');
 
-module.exports = {
-    Bulbasaur,
-    Charmander,
-    Squirtle,
-    Caterpie,
-    Weedle,
-    Pidgey,
-    Rattata,
-    Spearow,
-    Ekans,
-    Pikachu,
-    Sandshrew,
-    NidoranFemale,
-    NidoranMale,
-    Clefairy,
-    Vulpix,
-    Jigglypuff
-}
+const pokemons = [
+    'Bulbasaur',
+    'Charmander',
+    'Squirtle',
+    'Caterpie',
+    'Weedle',
+    'Pidgey',
+    'Rattata',
+    'Spearow',
+    'Ekans',
+    'Pikachu',
+    'Sandshrew',
+    'NidoranFemale',
+    'NidoranMale',
+    'Clefairy',
+    'Vulpix',
+    'Jigglypuff'
+];
+
+module.exports = PokemonHandler(pokemons);
