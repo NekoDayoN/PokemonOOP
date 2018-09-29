@@ -16,7 +16,8 @@ const pokemons = [
     'NidoranMale',
     'Clefairy',
     'Vulpix',
-    'Jigglypuff'
+    'Jigglypuff',
+    'Zubat'
 ];
 
 module.exports = multiFileLoader(__dirname + '/', pokemons);

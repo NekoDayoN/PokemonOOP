@@ -1,5 +1,5 @@
-const types = require('../types');
-const Pokemon = require('./Pokemon');
+const types = require('../types'),
+      Pokemon = require('./Pokemon');
 
 const { Tackle } = require('../attack/attacks');
 

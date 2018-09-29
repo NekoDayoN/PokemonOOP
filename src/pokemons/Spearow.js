@@ -1,6 +1,6 @@
-const attacks = require('../attack/attacks');
-const types = require('../types');
-const Pokemon = require('./Pokemon');
+const attacks = require('../attack/attacks'),
+      types = require('../types'),
+      Pokemon = require('./Pokemon');
 
 const { Growl, Peck } = attacks;
 
