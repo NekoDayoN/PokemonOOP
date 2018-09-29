@@ -1,4 +1,4 @@
-const PokemonHandler = require('./PokemonHandler');
+const multiFileLoader = require('../util/multiFileLoader');
 
 const pokemons = [
     'Bulbasaur',
@@ -19,4 +19,4 @@ const pokemons = [
     'Jigglypuff'
 ];
 
-module.exports = PokemonHandler(pokemons);
+module.exports = multiFileLoader(__dirname + '/', pokemons);
