@@ -15,7 +15,8 @@ const attacks = [
     "DefenseCurl",
     "Pound",
     "Ember",
-    "Absorb"
+    "Absorb",
+    "Growth"
 ];
 
 module.exports = multiFileLoader(__dirname + '/', attacks);
