@@ -2,6 +2,7 @@ const multiFileLoader = require('../util/multiFileLoader');
 
 const pokemons = [
     'Bulbasaur',
+    'Ivysaur',
     'Charmander',
     'Squirtle',
     'Caterpie',
