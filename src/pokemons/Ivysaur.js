@@ -1,7 +1,7 @@
 const Pokemon = require('./Pokemon'),
       types = require('../types');
 
-let Bulbasaur = require('./Bulbasaur');
+const Bulbasaur = require('./Bulbasaur');
 
 function Ivysaur(nickname, bulbasaur) {
     if(bulbasaur !== undefined && bulbasaur instanceof Bulbasaur) {
