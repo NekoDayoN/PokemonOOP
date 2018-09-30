@@ -13,5 +13,6 @@ function Absorb() {
 }
 
 Absorb.prototype = Object.create(Attack.prototype);
+Absorb.prototype.constructor = Absorb;
 
 module.exports = Absorb;

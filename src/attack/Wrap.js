@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const types = require('../types');
-const Attack = require('./Attack');
+const categories = require('./categories'),
+      types = require('../types'),
+      Attack = require('./Attack');
 
 function Wrap() {
     Attack.call(this, "Wrap");
@@ -13,6 +13,6 @@ function Wrap() {
 }
 
 Wrap.prototype = Object.create(Attack.prototype);
-Wrap.prototype._attack = function(pokemon) {}
+Wrap.prototype.constructor = Wrap;
 
 module.exports = Wrap;

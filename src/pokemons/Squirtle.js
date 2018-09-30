@@ -18,5 +18,6 @@ function Squirtle(nickname) {
 }
 
 Squirtle.prototype = Object.create(Pokemon.prototype);
+Squirtle.prototype.constructor = Squirtle;
 
 module.exports = Squirtle;

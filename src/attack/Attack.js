@@ -1,5 +1,5 @@
-const types = require('../types');
-const categories = require('./categories');
+const types = require('../types'),
+      categories = require('./categories');
 
 function Attack(name) {
     this.name = name || "";

@@ -18,5 +18,6 @@ function Spearow(nickname) {
 }
 
 Spearow.prototype = Object.create(Spearow.prototype);
+Spearow.prototype.constructor = Spearow;
 
 module.exports = Spearow;

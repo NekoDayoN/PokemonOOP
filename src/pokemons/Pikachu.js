@@ -18,5 +18,6 @@ function Pikachu(nickname) {
 }
 
 Pikachu.prototype = Object.create(Pokemon.prototype);
+Pikachu.prototype.constructor = Pikachu;
 
 module.exports = Pikachu;

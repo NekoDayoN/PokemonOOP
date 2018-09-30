@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const Attack = require('./Attack');
-const types = require('../types');
+const categories = require('./categories'),
+      Attack = require('./Attack'),
+      types = require('../types');
 
 function Ember() {
     Attack.call(this, "Ember");
@@ -13,5 +13,6 @@ function Ember() {
 }
 
 Ember.prototype = Object.create(Attack.prototype);
+Ember.prototype.constructor = Ember;
 
 module.exports = Ember;

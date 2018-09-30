@@ -13,5 +13,6 @@ function Growth() {
 }
 
 Growth.prototype = Object.create(Attack.prototype);
+Growth.prototype.constructor = Growth;
 
 module.exports = Growth;

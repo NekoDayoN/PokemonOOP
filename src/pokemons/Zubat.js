@@ -17,5 +17,6 @@ function Zubat(nickname) {
 }
 
 Zubat.prototype = Object.create(Pokemon.prototype);
+Zubat.prototype.constructor = Zubat;
 
 module.exports = Zubat;

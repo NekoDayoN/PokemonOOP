@@ -18,5 +18,6 @@ function Clefairy(nickname) {
 }
 
 Clefairy.prototype = Object.create(Pokemon.prototype);
+Clefairy.prototype.constructor = Clefairy;
 
 module.exports = Clefairy;

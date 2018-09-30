@@ -18,5 +18,6 @@ function Charmander(nickname) {
 }
 
 Charmander.prototype = Object.create(Pokemon.prototype);
+Charmander.prototype.constructor = Charmander;
 
 module.exports = Charmander;

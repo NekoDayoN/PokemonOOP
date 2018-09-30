@@ -17,5 +17,6 @@ function Pidgey(nickname) {
 }
 
 Pidgey.prototype = Object.create(Pokemon.prototype);
+Pidgey.prototype.constructor = Pidgey;
 
 module.exports = Pidgey;

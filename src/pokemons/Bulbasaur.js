@@ -18,5 +18,6 @@ function Bulbasaur(nickname) {
 }
 
 Bulbasaur.prototype = Object.create(Pokemon.prototype);
+Bulbasaur.prototype.constructor = Bulbasaur;
 
 module.exports = Bulbasaur;

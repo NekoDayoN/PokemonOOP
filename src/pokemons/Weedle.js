@@ -18,5 +18,6 @@ function Weedle(nickname) {
 }
 
 Weedle.prototype = Object.create(Pokemon.prototype);
+Weedle.prototype.constructor = Weedle;
 
 module.exports = Weedle;

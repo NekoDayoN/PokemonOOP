@@ -18,5 +18,6 @@ function Rattata(nickname) {
 }
 
 Rattata.prototype = Object.create(Pokemon.prototype);
+Rattata.prototype.constructor = Rattata;
 
 module.exports = Rattata;

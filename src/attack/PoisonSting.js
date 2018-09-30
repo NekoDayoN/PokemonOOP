@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const types = require('../types');
-const Attack = require('./Attack');
+const categories = require('./categories'),
+      types = require('../types'),
+      Attack = require('./Attack');
 
 function PoisonSting() {
     Attack.call(this, "Poison Sting");
@@ -12,6 +12,6 @@ function PoisonSting() {
 }
 
 PoisonSting.prototype = Object.create(Attack.prototype);
-PoisonSting.prototype._attack = function() {}
+PoisonSting.prototype.constructor = PoisonSting;
 
 module.exports = PoisonSting;

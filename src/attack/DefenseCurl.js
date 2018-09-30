@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const types = require('../types');
-const Attack = require('./Attack');
+const categories = require('./categories'),
+      types = require('../types'),
+      Attack = require('./Attack');
 
 function DefenseCurl() {
     Attack.call(this, "Defense Curl");
@@ -13,6 +13,6 @@ function DefenseCurl() {
 }
 
 DefenseCurl.prototype = Object.create(Attack.prototype);
-DefenseCurl.prototype._attack = function(pokemon) {}
+DefenseCurl.prototype.constructor = DefenseCurl;
 
 module.exports = DefenseCurl;

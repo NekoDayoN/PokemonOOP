@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const types = require('../types');
-const Attack = require('./Attack');
+const categories = require('./categories'),
+      types = require('../types'),
+      Attack = require('./Attack');
 
 function Scratch() {
     Attack.call(this, "Scratch");
@@ -13,8 +13,6 @@ function Scratch() {
 }
 
 Scratch.prototype = Object.create(Attack.prototype);
-Scratch.prototype._attack = function() {
-    
-}
+Scratch.prototype.constructor = Scratch;
 
 module.exports = Scratch;

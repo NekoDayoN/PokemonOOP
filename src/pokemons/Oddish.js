@@ -18,5 +18,6 @@ function Oddish(nickname) {
 }
 
 Oddish.prototype = Object.create(Pokemon.prototype);
+Oddish.prototype.constructor = Oddish;
 
 module.exports = Oddish;

@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const Attack = require('./Attack');
-const types = require('../types');
+const categories = require('./categories'),
+      Attack = require('./Attack'),
+      types = require('../types');
 
 function Pound() {
     Attack.call(this, "Pound");
@@ -13,5 +13,6 @@ function Pound() {
 }
 
 Pound.prototype = Object.create(Attack.prototype);
+Pound.prototype.constructor = Pound;
 
 module.exports = Pound;

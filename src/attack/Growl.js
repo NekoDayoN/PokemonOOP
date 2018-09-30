@@ -1,6 +1,6 @@
-const types = require('../types');
-const categories = require('./categories');
-const Attack = require('./Attack');
+const types = require('../types'),
+      categories = require('./categories'),
+      Attack = require('./Attack');
 
 function Growl() {
     Attack.call(this, "Growl");
@@ -13,8 +13,6 @@ function Growl() {
 }
 
 Growl.prototype = Object.create(Attack.prototype);
-Growl.prototype._attack = function(pokemon) {
-    
-}
+Growl.prototype.constructor = Growl;
 
 module.exports = Growl;

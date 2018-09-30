@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const types = require('../types');
-const Attack = require('./Attack');
+const categories = require('./categories'),
+      types = require('../types'),
+      Attack = require('./Attack');
 
 function Leer() {
     Attack.call(this, "Leer");
@@ -13,6 +13,6 @@ function Leer() {
 }
 
 Leer.prototype = Object.create(Attack.prototype);
-Leer.prototype._attack = function(pokemon) {}
+Leer.prototype.constructor = Leer;
 
 module.exports = Leer;

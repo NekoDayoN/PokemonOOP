@@ -18,5 +18,6 @@ function NidoranFemale(nickname) {
 }
 
 NidoranFemale.prototype = Object.create(Pokemon.prototype);
+NidoranFemale.prototype.constructor = NidoranFemale;
 
 module.exports = NidoranFemale;

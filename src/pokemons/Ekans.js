@@ -19,5 +19,6 @@ function Ekans(nickname) {
 }
 
 Ekans.prototype = Object.create(Pokemon.prototype);
+Ekans.prototype.constructor = Ekans;
 
 module.exports = Ekans;

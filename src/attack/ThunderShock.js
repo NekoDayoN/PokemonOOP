@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const Attack = require('./Attack');
-const types = require('../types');
+const categories = require('./categories'),
+      Attack = require('./Attack'),
+      types = require('../types');
 
 function ThunderShock() {
     Attack.call(this, "Thunder Shock");
@@ -13,5 +13,6 @@ function ThunderShock() {
 }
 
 ThunderShock.prototype = Object.create(Attack.prototype);
+ThunderShock.prototype.constructor = ThunderShock;
 
 module.exports = ThunderShock;

@@ -1,6 +1,6 @@
-const types = require('../types');
-const Attack = require('./Attack');
-const categories = require('./categories');
+const types = require('../types'),
+      Attack = require('./Attack'),
+      categories = require('./categories');
 
 function Peck() {
     Attack.call(this, "Peck");
@@ -13,6 +13,6 @@ function Peck() {
 }
 
 Peck.prototype = Object.create(Peck.prototype);
-Peck.prototype._attack = function(pokemon) { }
+Peck.prototype.constructor = Peck;
 
 module.exports = Peck;

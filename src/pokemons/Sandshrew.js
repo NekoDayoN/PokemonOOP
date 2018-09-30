@@ -18,5 +18,6 @@ function Sandshrew(nickname) {
 }
 
 Sandshrew.prototype = Object.create(Pokemon.prototype);
+Sandshrew.prototype.constructor = Sandshrew;
 
 module.exports = Sandshrew;

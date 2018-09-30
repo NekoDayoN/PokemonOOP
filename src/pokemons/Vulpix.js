@@ -18,5 +18,6 @@ function Vulpix(nickname) {
 }
 
 Vulpix.prototype = Object.create(Pokemon.prototype);
+Vulpix.prototype.constructor = Vulpix;
 
 module.exports = Vulpix;

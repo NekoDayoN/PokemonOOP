@@ -1,6 +1,6 @@
-const categories = require('./categories');
-const types = require('../types');
-const Attack = require('../attack/Attack');
+const categories = require('./categories'),
+      types = require('../types'),
+      Attack = require('../attack/Attack');
 
 function StringShot() {
     Attack.call(this, "String Shot");
@@ -12,8 +12,6 @@ function StringShot() {
 }
 
 StringShot.prototype = Object.create(Attack.prototype);
-StringShot.prototype._attack = function() {
-
-}
+StringShot.prototype.constructor = StringShot;
 
 module.exports = StringShot;

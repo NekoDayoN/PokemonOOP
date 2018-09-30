@@ -1,6 +1,6 @@
-const categories = require("./categories");
-const types = require("../types");
-const Attack = require("./Attack");
+const categories = require("./categories"),
+      types = require("../types"),
+      Attack = require("./Attack");
 
 function TailWhip() {
     Attack.call(this, "TailWhip");
@@ -13,8 +13,6 @@ function TailWhip() {
 }
 
 TailWhip.prototype = Object.create(Attack.prototype);
-TailWhip.prototype._attack = function() {
-
-}
+TailWhip.prototype.constructor = TailWhip;
 
 module.exports = TailWhip;

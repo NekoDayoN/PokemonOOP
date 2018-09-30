@@ -18,5 +18,6 @@ function Jigglypuff(nickname) {
 }
 
 Jigglypuff.prototype = Object.create(Pokemon.prototype);
+Jigglypuff.prototype.constructor = Jigglypuff;
 
 module.exports = Jigglypuff;

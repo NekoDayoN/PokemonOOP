@@ -18,5 +18,6 @@ function Caterpie(nickname) {
 }
 
 Caterpie.prototype = Object.create(Pokemon.prototype);
+Caterpie.prototype.constructor = Caterpie;
 
 module.exports = Caterpie;
