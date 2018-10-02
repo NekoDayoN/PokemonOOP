@@ -1,5 +1,5 @@
-const { Venusaur } = require('./src/pokemons/pokemons');
+const { Ivysaur } = require('./src/pokemons/pokemons');
 
-const pokemon = new Venusaur();
+const pokemon = new Ivysaur();
 
 console.log(pokemon);
