@@ -3,7 +3,7 @@ const _fetchFile = (path, name) => require(path + name);
 /**
  * Loads Multiple files from the same folder and returns it as an object
  */
-function multiFileLoader(path, files) {
+const multiFileLoader = (path, files) => {
     const filesToExport = {};
 
     for(const file of files) {

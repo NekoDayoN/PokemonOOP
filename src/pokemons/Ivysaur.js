@@ -1,19 +1,21 @@
 const Pokemon = require('./Pokemon'),
-      types = require('../types');
+      types = require('../types'),
+      evolutionHelper = require('../util/evolutionHelper');
 
 const Bulbasaur = require('./Bulbasaur');
 
 function Ivysaur(nickname, bulbasaur) {
-    if(bulbasaur !== undefined && bulbasaur instanceof Bulbasaur) {
-        Object.assign(this, bulbasaur);
-        
-        bulbasaur.name = bulbasaur.name === "Bulbasaur" ? bulbasaur.name = "Ivysaur" : bulbasaur.name;
-        this.name = bulbasaur.name;
-        return;
-    }
+    const pokemon = evolutionHelper({
+        pokemon: bulbasaur,
+        _constructor: Bulbasaur,
+        className: {
+            new: 'Ivysaur',
+            old: 'Bulbasaur'
+        }
+    });
 
-    Object.assign(this, new Bulbasaur);
-    this.name = nickname || 'Ivysaur';
+    Object.assign(this, pokemon || new Bulbasaur);
+    this.name = this.name || nickname || 'Ivysaur';
     this.hp = 60;
     this.attack = 62;
     this.defense = 63;
