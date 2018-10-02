@@ -6,12 +6,7 @@ const Pokemon = require('./Pokemon'),
 const Bulbasaur = require('./Bulbasaur');
 
 function Ivysaur(nickname, bulbasaur) {
-    const pokemon = evolutionHelper({
-        pokemon: bulbasaur,
-        _constructor: Bulbasaur,
-        
-    });
-
+    const pokemon = evolutionHelper({ pokemon: bulbasaur, _constructor: Bulbasaur });
     Object.assign(this, pokemon || new Bulbasaur);
     
     this.name = nicknameChecker({
