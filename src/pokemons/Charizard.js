@@ -8,6 +8,7 @@ function Charizard(nickname, charmeleon) {
     const pokemon = evolutionHelper({ pokemon: charmeleon, _constructor: Charmeleon});
 
     Object.assign(this, pokemon || new Charmeleon);
+    this.name = "Charizard";
     this.nickname = nickname || '';
     this.hp = 78;
     this.attack = 84;

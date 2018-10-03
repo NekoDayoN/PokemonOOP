@@ -8,6 +8,7 @@ const pokemons = [
     'Charmeleon',
     'Charizard',
     'Squirtle',
+    'Wartortle',
     'Caterpie',
     'Weedle',
     'Pidgey',
