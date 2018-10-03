@@ -1,5 +1,4 @@
-const Pokemon = require('./Pokemon'),
-      types = require('../types'),
+const types = require('../types'),
       evolutionHelper = require('../util/evolutionHelper');
 
 const Charmeleon = require('./Charmeleon');
