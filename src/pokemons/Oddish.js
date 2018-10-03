@@ -5,9 +5,10 @@ const Pokemon = require('./Pokemon'),
 const { Absorb, Growth } = attacks;
 
 function Oddish(nickname) {
-    Pokemon.call(this, nickname || "Oddish");
+    Pokemon.call(this, "Oddish");
     this.types = [ types.poison, types.grass ];
     this.attacks = [ new Absorb, new Growth ];
+    this.nickname = nickname || '';
     this.level = 1;
     this.hp = 45;
     this.attack = 50;

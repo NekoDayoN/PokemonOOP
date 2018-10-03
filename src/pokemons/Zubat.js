@@ -4,9 +4,10 @@ const Pokemon = require('./Pokemon'),
 const { Absorb } = require('../attack/attacks');
 
 function Zubat(nickname) {
-    Pokemon.call(this, nickname || "Zubat");
+    Pokemon.call(this, "Zubat");
     this.types = [ types.poison, types.flying ];
     this.attacks = [ new Absorb ];
+    this.nickname = nickname || '';
     this.level = 1;
     this.hp = 40;
     this.attack = 45;

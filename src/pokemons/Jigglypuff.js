@@ -5,9 +5,10 @@ const Pokemon = require('./Pokemon'),
 const { DefenseCurl } = attacks;
 
 function Jigglypuff(nickname) {
-    Pokemon.call(this, nickname || "Jigglypuff");
+    Pokemon.call(this, "Jigglypuff");
     this.types = [ types.normal, types.fairy ];
     this.attacks = [ new DefenseCurl ];
+    this.nickname = nickname || '';
     this.level = 1;
     this.hp = 115;
     this.attack = 45;

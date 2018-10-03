@@ -3,6 +3,7 @@ const { Attack } = require('../attack/attacks.js');
 
 function Pokemon(name) {
     this.name = name;
+    this.nickname = '';
     this.types = [ types.undefined ];
     this.attacks = [ new Attack ];
     this.level = 0;

@@ -5,9 +5,10 @@ const Pokemon = require('./Pokemon'),
 const { PoisonSting, StringShot } = attacks;
 
 function Weedle(nickname) {
-    Pokemon.call(this, nickname || "Weedle");
+    Pokemon.call(this, "Weedle");
     this.types = [ types.bug, types.poison ];
     this.attacks = [ new PoisonSting, new StringShot ];
+    this.nickname = nickname || '';
     this.level = 1;
     this.hp = 40;
     this.attack = 35;

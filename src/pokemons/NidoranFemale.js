@@ -5,9 +5,10 @@ const types = require('../types'),
 const { Growl, Scratch } = attacks;
 
 function NidoranFemale(nickname) {
-    Pokemon.call(this, nickname || "Nidoran Female");
+    Pokemon.call(this, "Nidoran Female");
     this.types = [ types.poison ];
     this.attacks = [ new Growl, new Scratch ];
+    this.nickname = nickname || '';
     this.level = 1;
     this.hp = 55;
     this.attack = 47;

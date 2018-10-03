@@ -1,23 +1,15 @@
 const Pokemon = require('./Pokemon'),
       types = require('../types'),
-      evolutionHelper = require('../util/evolutionHelper'),
-      nicknameChecker = require('../util/nicknameChecker');
+      evolutionHelper = require('../util/evolutionHelper');
 
 const Ivysaur = require('./Ivysaur');
 
 function Venusaur(nickname, ivysaur) {
     const pokemon = evolutionHelper({ pokemon: ivysaur, _constructor: Ivysaur });
-
     Object.assign(this, pokemon || new Ivysaur);
 
-    this.name = nicknameChecker({
-        pokemon: ivysaur,
-        className: {
-            new: 'Venusaur',
-            old: 'Ivysaur'
-        }
-    });
-
+    this.name = 'Venusaur';
+    this.nickname = nickname || '';
     this.hp = 80;
     this.attack = 82;
     this.defense = 83;

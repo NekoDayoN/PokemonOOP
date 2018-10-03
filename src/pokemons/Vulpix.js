@@ -5,9 +5,10 @@ const types = require('../types'),
 const { Ember } = attacks;
 
 function Vulpix(nickname) {
-    Pokemon.call(this, nickname || "Vulpix");
+    Pokemon.call(this, "Vulpix");
     this.types = [ types.fire ];
     this.attacks = [ new Ember ];
+    this.nickname = nickname || '';
     this.level = 1;
     this.hp = 38;
     this.attack = 41;

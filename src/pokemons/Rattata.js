@@ -5,9 +5,10 @@ const types = require('../types'),
 const { Tackle, TailWhip } = attacks;
 
 function Rattata(nickname) {
-    Pokemon.call(this, nickname || "Rattata");
+    Pokemon.call(this, "Rattata");
     this.types = [ types.normal ];
     this.attacks = [ new Tackle, new TailWhip ];
+    this.nickname = nickname || '';
     this.level = 1;
     this.hp = 30;
     this.attack = 56;
