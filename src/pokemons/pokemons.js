@@ -5,6 +5,7 @@ const pokemons = [
     'Ivysaur',
     'Venusaur',
     'Charmander',
+    'Charmeleon',
     'Squirtle',
     'Caterpie',
     'Weedle',
