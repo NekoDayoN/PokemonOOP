@@ -1,5 +1,4 @@
-const types = require('../types'),
-      evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper');
 
 const Squirtle = require('./Squirtle'),
       { WaterGun } = require('../attack/attacks');

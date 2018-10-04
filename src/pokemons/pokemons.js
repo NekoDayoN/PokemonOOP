@@ -11,6 +11,7 @@ const pokemons = [
     'Wartortle',
     'Blastoise',
     'Caterpie',
+    'Metapod',
     'Weedle',
     'Pidgey',
     'Rattata',

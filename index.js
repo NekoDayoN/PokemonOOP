@@ -1,5 +1,5 @@
-const { Blastoise } = require('./src/pokemons/pokemons');
+const { Metapod } = require('./src/pokemons/pokemons');
 
-const pokemon = new Blastoise();
+const pokemon = new Metapod();
 
 console.log(pokemon);
