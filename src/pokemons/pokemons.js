@@ -1,17 +1,10 @@
 const multiFileLoader = require('../util/multiFileLoader');
 
 const pokemons = [
-    'Bulbasaur',
-    'Ivysaur',
-    'Venusaur',
-    'Charmander',
-    'Charmeleon',
-    'Charizard',
-    'Squirtle',
-    'Wartortle',
-    'Blastoise',
-    'Caterpie',
-    'Metapod',
+    'Bulbasaur', 'Ivysaur', 'Venusaur',
+    'Charmander', 'Charmeleon', 'Charizard',
+    'Squirtle', 'Wartortle', 'Blastoise',
+    'Caterpie', 'Metapod', 'Butterfree',
     'Weedle',
     'Pidgey',
     'Rattata',
