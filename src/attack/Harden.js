@@ -5,7 +5,7 @@ const types = require('../types'),
 function Harden() {
     Attack.call(this, "Harden");
     this.type = types.normal;
-    this.category = this.status;
+    this.category = categories.status;
     this.power = 0;
     this.accuracy = 0;
     this.pp = 30;
