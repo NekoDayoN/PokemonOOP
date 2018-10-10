@@ -7,7 +7,7 @@ function Confusion() {
     this.type = types.psychic;
     this.category = categories.special;
     this.power = 50;
-    this.accuracy = 100;
+    this.accuracy = 1.0;
     this.description = "A weak telekinetic attack that may also leave the foe confused.";
 }
 Confusion.prototype = Object.create(Attack.prototype);

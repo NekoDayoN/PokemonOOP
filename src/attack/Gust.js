@@ -7,7 +7,7 @@ function Gust() {
     this.type = types.flying;
     this.category = categories.special;
     this.power = 40;
-    this.accuracy = 100;
+    this.accuracy = 1.0;
     this.pp = 35;
     this.description = "Strikes the foe with a gust of wind whipped up by wings.";
 }

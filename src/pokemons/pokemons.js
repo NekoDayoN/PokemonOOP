@@ -6,7 +6,7 @@ const pokemons = [
     'Squirtle', 'Wartortle', 'Blastoise',
     'Caterpie', 'Metapod', 'Butterfree',
     'Weedle', 'Kakuna', 'Beedrill',
-    'Pidgey',
+    'Pidgey', 'Pidgeotto',
     'Rattata',
     'Spearow',
     'Ekans',

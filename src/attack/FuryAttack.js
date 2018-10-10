@@ -7,7 +7,7 @@ function FuryAttack() {
     this.type = types.normal;
     this.category = categories.physical;
     this.power = 15;
-    this.accuracy = 85;
+    this.accuracy = .85;
     this.pp = 20;
     this.description = "The foe is jabbed repeatedly with a horn or beak two to five times.";
 }

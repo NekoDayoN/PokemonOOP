@@ -7,7 +7,7 @@ function WaterGun() {
     this.type = types.water;
     this.category = categories.special;
     this.power = 40;
-    this.accuracy = 100;
+    this.accuracy = 1.0;
     this.pp = 25;
     this.description = "The foe is struck with a lot of water expelled forcibly from the mouth.";
 }
