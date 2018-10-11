@@ -5,7 +5,7 @@ const Charmeleon = require('./Charmeleon');
 function Charizard(nickname, charmeleon) {
     const pokemon = evolutionHelper({ pokemon: charmeleon, _constructor: Charmeleon});
 
-    Object.assign(this, pokemon || new Charmeleon);
+    Object.assign(this, pokemon);
     this.name = "Charizard";
     this.nickname = nickname || '';
     this.hp = 78;

@@ -4,8 +4,8 @@ const Ivysaur = require('./Ivysaur');
 
 function Venusaur(nickname, ivysaur) {
     const pokemon = evolutionHelper({ pokemon: ivysaur, _constructor: Ivysaur });
-    Object.assign(this, pokemon || new Ivysaur);
-
+    
+    Object.assign(this, pokemon );
     this.name = 'Venusaur';
     this.nickname = nickname || '';
     this.hp = 80;

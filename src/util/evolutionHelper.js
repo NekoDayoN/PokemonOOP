@@ -8,7 +8,7 @@ const evolutionHelper = args => {
         
         return pokemon;
     }
-    return null;
+    return new args._constructor;
 }
 
 module.exports = evolutionHelper;

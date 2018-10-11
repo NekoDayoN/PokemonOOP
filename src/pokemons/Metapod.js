@@ -6,7 +6,7 @@ const Caterpie = require('./Caterpie');
 function Metapod(nickname, caterpie) {
     const pokemon = evolutionHelper({ pokemon: caterpie, _constructor: Caterpie });
 
-    Object.assign(this, pokemon || new Caterpie);
+    Object.assign(this, pokemon);
     this.name = "Metapod";
     this.nickname = nickname || "";
     this.hp = 50;

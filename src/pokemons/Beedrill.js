@@ -6,7 +6,7 @@ const Kakuna = require('./Kakuna'),
 function Beedrill(nickname, kakuna) {
     const pokemon = evolutionHelper({ pokemon: kakuna, _constructor: Kakuna });
 
-    Object.assign(this, pokemon || new Kakuna);
+    Object.assign(this, pokemon);
     this.name = "Beedrill";
     this.nickname = nickname || "";
     this.level = 1;

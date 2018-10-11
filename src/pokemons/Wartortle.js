@@ -6,7 +6,7 @@ const Squirtle = require('./Squirtle'),
 function Wartortle(nickname, squirtle) {
     const pokemon = evolutionHelper({ pokemon: squirtle, _constructor: Squirtle });
 
-    Object.assign(this, pokemon || new Squirtle);
+    Object.assign(this, pokemon);
     this.name = 'Wartortle';
     this.nickname = nickname || '';
     this.hp = 59;

@@ -6,7 +6,7 @@ const Weedle = require('./Weedle'),
 function Kakuna(nickname, weedle) {
     const pokemon = evolutionHelper({ pokemon: weedle, _constructor: Weedle });
 
-    Object.assign(this, pokemon || new Weedle);
+    Object.assign(this, pokemon);
     this.name = "Kakuna";
     this.nickname = nickname || "";
     this.hp = 45;

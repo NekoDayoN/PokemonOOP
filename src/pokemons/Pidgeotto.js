@@ -6,7 +6,7 @@ const Pidgey = require('./Pidgey'),
 function Pidgeotto(nickname, pidgey) {
     const pokemon = evolutionHelper({ pokemon: pidgey, _constructor: Pidgey });
 
-    Object.assign(this, pokemon || new Pidgey);
+    Object.assign(this, pokemon);
     this.name = "Pidgeotto";
     this.nickname = nickname || "";
     this.level = 1;
