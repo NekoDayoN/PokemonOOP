@@ -11,7 +11,7 @@ const pokemons = [
     'Spearow', 'Fearow',
     'Ekans', 'Arbok',
     'Pikachu', 'Raichu',
-    'Sandshrew',
+    'Sandshrew', 'Sandslash',
     'NidoranFemale',
     'NidoranMale',
     'Clefairy',
