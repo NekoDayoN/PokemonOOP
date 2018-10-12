@@ -1,12 +1,11 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Kakuna = require('./Kakuna'),
     { FuryAttack } = require('../attack/attacks');
 
 function Beedrill(nickname, kakuna) {
-    const pokemon = evolutionHelper({ pokemon: kakuna, _constructor: Kakuna });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: kakuna, super: Kakuna, base: this });
     this.name = "Beedrill";
     this.nickname = nickname || "";
     this.level = 1;
@@ -18,7 +17,5 @@ function Beedrill(nickname, kakuna) {
     this.speed = 75;
     this.attacks.push(new FuryAttack);
 }
-Beedrill.prototype = Object.create(Kakuna.prototype);
-Beedrill.prototype.constructor = Beedrill;
 
-module.exports = Beedrill;
+module.exports = protoInheritance({ base: Beedrill, super: Kakuna });

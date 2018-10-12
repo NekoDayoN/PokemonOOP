@@ -1,12 +1,11 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Squirtle = require('./Squirtle'),
       { WaterGun } = require('../attack/attacks');
 
 function Wartortle(nickname, squirtle) {
-    const pokemon = evolutionHelper({ pokemon: squirtle, _constructor: Squirtle });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: squirtle, super: Squirtle, base: this });
     this.name = 'Wartortle';
     this.nickname = nickname || '';
     this.hp = 59;
@@ -17,7 +16,6 @@ function Wartortle(nickname, squirtle) {
     this.speed = 58;
     this.attacks.push(new WaterGun);
 }
-Wartortle.prototype = Object.create(Squirtle.prototype);
-Wartortle.prototype.constructor = Wartortle;
 
-module.exports = Wartortle;
+
+module.exports = protoInheritance({ base: Wartortle, super: Squirtle });

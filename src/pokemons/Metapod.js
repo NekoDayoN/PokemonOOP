@@ -1,12 +1,11 @@
 const evolutionHelper = require('../util/evolutionHelper'),
-      { Harden } = require('../attack/attacks');
+      protoInheritance = require('../util/protoInheritance');
 
-const Caterpie = require('./Caterpie');
+const Caterpie = require('./Caterpie'),
+    { Harden } = require('../attack/attacks');
 
 function Metapod(nickname, caterpie) {
-    const pokemon = evolutionHelper({ pokemon: caterpie, _constructor: Caterpie });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: caterpie, super: Caterpie, base: this });
     this.name = "Metapod";
     this.nickname = nickname || "";
     this.hp = 50;
@@ -17,7 +16,5 @@ function Metapod(nickname, caterpie) {
     this.speed = 30;
     this.attacks.push(new Harden);
 }
-Metapod.prototype = Object.create(Caterpie.prototype);
-Metapod.prototype.constructor = Metapod;
 
-module.exports = Metapod;
+module.exports = protoInheritance({ base: Metapod, super: Caterpie });

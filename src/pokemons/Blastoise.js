@@ -1,11 +1,10 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Wartortle = require('./Wartortle');
 
 function Blastoise(nickname, wartortle) {
-    const pokemon = evolutionHelper({ pokemon: wartortle, _constructor: Wartortle });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: wartortle, super: Wartortle, base: this });
     this.name = "Blastoise";
     this.nickname = nickname || "";
     this.hp = 79;
@@ -14,7 +13,5 @@ function Blastoise(nickname, wartortle) {
     this.spDefense = 105;
     this.speed = 78;
 }
-Blastoise.prototype = Object.create(Wartortle.prototype);
-Blastoise.prototype.constructor = Blastoise;
 
-module.exports = Blastoise;
+module.exports = protoInheritance({ base: Blastoise, super: Wartortle });

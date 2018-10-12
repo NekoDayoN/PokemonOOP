@@ -1,11 +1,10 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Charmeleon = require('./Charmeleon');
 
 function Charizard(nickname, charmeleon) {
-    const pokemon = evolutionHelper({ pokemon: charmeleon, _constructor: Charmeleon});
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: charmeleon, super: Charmeleon, base: this });
     this.name = "Charizard";
     this.nickname = nickname || '';
     this.hp = 78;
@@ -16,7 +15,4 @@ function Charizard(nickname, charmeleon) {
     this.speed = 100;
 }
 
-Charizard.prototype = Object.create(Charmeleon.prototype);
-Charizard.prototype.constructor = Charizard;
-
-module.exports = Charizard;
+module.exports = protoInheritance({ base: Charizard, super: Charmeleon });

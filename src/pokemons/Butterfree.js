@@ -1,4 +1,5 @@
 const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance'),
       types = require('../types'),
       attacks = require('../attack/attacks');
 
@@ -6,9 +7,7 @@ const Metapod = require('./Metapod'),
       { Confusion, Gust } = attacks;
 
 function Butterfree(nickname, metapod) {
-    const pokemon = evolutionHelper({ pokemon: metapod, _constructor: Metapod });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: metapod, super: Metapod, base: this });
     this.name = "Butterfree";
     this.nickname = nickname || "";
     this.types.push(types.flying);
@@ -22,7 +21,5 @@ function Butterfree(nickname, metapod) {
     this.attacks.pop(); 
     this.attacks.splice(2, 0, new Confusion, new Gust);
 }
-Butterfree.prototype = Object.create(Metapod.prototype);
-Butterfree.prototype.constructor = Butterfree;
 
-module.exports = Butterfree;
+module.exports = protoInheritance({ base: Butterfree, super: Metapod });

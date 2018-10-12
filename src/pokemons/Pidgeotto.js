@@ -1,12 +1,11 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Pidgey = require('./Pidgey'),
     { Gust, SandAttack } = require('../attack/attacks');
 
 function Pidgeotto(nickname, pidgey) {
-    const pokemon = evolutionHelper({ pokemon: pidgey, _constructor: Pidgey });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: pidgey, super: Pidgey, base: this });
     this.name = "Pidgeotto";
     this.nickname = nickname || "";
     this.level = 1;
@@ -18,7 +17,5 @@ function Pidgeotto(nickname, pidgey) {
     this.speed = 71;
     this.attacks.push(new Gust, new SandAttack);
 }
-Pidgeotto.prototype = Object.create(Pidgey.prototype);
-Pidgeotto.prototype.constructor = Pidgeotto;
 
-module.exports = Pidgeotto;
+module.exports = protoInheritance({ base: Pidgeotto, super: Pidgey });

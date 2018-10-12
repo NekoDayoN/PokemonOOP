@@ -1,12 +1,11 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Charmander = require('./Charmander'),
       { Ember } = require('../attack/attacks');
 
 function Charmeleon(nickname, charmander) {
-    const pokemon = evolutionHelper({ pokemon: charmander, _constructor: Charmander });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: charmander, super: Charmander, base: this });
     this.name = "Charmeleon";
     this.nickname = nickname || '';
     this.hp = 58;
@@ -18,7 +17,4 @@ function Charmeleon(nickname, charmander) {
     this.attacks.push(new Ember);
 }
 
-Charmeleon.prototype = Object.create(Charmander.prototype);
-Charmeleon.prototype.constructor = Charmeleon;
-
-module.exports = Charmeleon;
+module.exports = protoInheritance({ base: Charmeleon, super: Charmander });

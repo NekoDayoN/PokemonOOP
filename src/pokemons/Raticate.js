@@ -15,6 +15,4 @@ function Raticate(nickname, rattata) {
     this.speed = 97;
 }
 
-protoInheritance({ base: Raticate, super: Rattata });
-
-module.exports = Raticate;
+module.exports = protoInheritance({ base: Raticate, super: Rattata });

@@ -1,11 +1,10 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Ivysaur = require('./Ivysaur');
 
 function Venusaur(nickname, ivysaur) {
-    const pokemon = evolutionHelper({ pokemon: ivysaur, _constructor: Ivysaur });
-    
-    Object.assign(this, pokemon );
+    evolutionHelper({ pokemon: ivysaur, super: Ivysaur, base: this });
     this.name = 'Venusaur';
     this.nickname = nickname || '';
     this.hp = 80;
@@ -16,7 +15,4 @@ function Venusaur(nickname, ivysaur) {
     this.speed = 80;
 }
 
-Venusaur.prototype = Object.create(Ivysaur.prototype);
-Venusaur.prototype.constructor = Venusaur;
-
-module.exports = Venusaur;
+module.exports = protoInheritance({ base: Venusaur, super: Ivysaur });

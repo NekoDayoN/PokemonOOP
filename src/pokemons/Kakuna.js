@@ -1,12 +1,11 @@
-const evolutionHelper = require('../util/evolutionHelper');
+const evolutionHelper = require('../util/evolutionHelper'),
+      protoInheritance = require('../util/protoInheritance');
 
 const Weedle = require('./Weedle'),
     { Harden } = require('../attack/attacks');
 
 function Kakuna(nickname, weedle) {
-    const pokemon = evolutionHelper({ pokemon: weedle, _constructor: Weedle });
-
-    Object.assign(this, pokemon);
+    evolutionHelper({ pokemon: weedle, super: Weedle, base: this });
     this.name = "Kakuna";
     this.nickname = nickname || "";
     this.hp = 45;
@@ -17,7 +16,5 @@ function Kakuna(nickname, weedle) {
     this.speed = 35;
     this.attacks.push(new Harden);
 }
-Kakuna.prototype = Object.create(Weedle.prototype);
-Kakuna.prototype.constructor = Kakuna;
 
-module.exports = Kakuna;
+module.exports = protoInheritance({ base: Kakuna, super: Weedle });
