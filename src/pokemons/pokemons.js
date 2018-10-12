@@ -10,7 +10,7 @@ const pokemons = [
     'Rattata', 'Raticate',
     'Spearow', 'Fearow',
     'Ekans', 'Arbok',
-    'Pikachu',
+    'Pikachu', 'Raichu',
     'Sandshrew',
     'NidoranFemale',
     'NidoranMale',
