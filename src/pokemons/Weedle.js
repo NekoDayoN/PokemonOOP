@@ -1,6 +1,7 @@
 const Pokemon = require('./Pokemon'),
       types = require('../types'),
-      attacks = require('../attack/attacks');
+      attacks = require('../attack/attacks'),
+      protoInheritance = require('../util/protoInheritance');
 
 const { PoisonSting, StringShot } = attacks;
 
@@ -18,7 +19,4 @@ function Weedle(nickname) {
     this.speed = 50;
 }
 
-Weedle.prototype = Object.create(Pokemon.prototype);
-Weedle.prototype.constructor = Weedle;
-
-module.exports = Weedle;
+module.exports = protoInheritance({ base: Weedle, super: Pokemon });

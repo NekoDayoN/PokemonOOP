@@ -1,6 +1,7 @@
 const types = require('../types'),
       Pokemon = require('./Pokemon'),
-      attacks = require('../attack/attacks');
+      attacks = require('../attack/attacks'),
+      protoInheritance = require('../util/protoInheritance');
 
 const { Leer, Peck } = attacks;
 
@@ -18,7 +19,4 @@ function NidoranMale(nickname) {
     this.speed = 50;
 }
 
-NidoranMale.prototype = Object.create(Pokemon.prototype);
-NidoranMale.prototype.constructor = NidoranMale;
-
-module.exports = NidoranMale;
+module.exports = protoInheritance({ base: NidoranMale, super: Pokemon });

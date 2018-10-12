@@ -1,6 +1,7 @@
 const types = require('../types'),
       Pokemon = require('./Pokemon'),
-      attacks = require('../attack/attacks');
+      attacks = require('../attack/attacks'),
+      protoInheritance = require('../util/protoInheritance');
 
 const { Ember } = attacks;
 
@@ -18,7 +19,4 @@ function Vulpix(nickname) {
     this.speed = 65;
 }
 
-Vulpix.prototype = Object.create(Pokemon.prototype);
-Vulpix.prototype.constructor = Vulpix;
-
-module.exports = Vulpix;
+module.exports = protoInheritance({ base: Vulpix, super: Pokemon });

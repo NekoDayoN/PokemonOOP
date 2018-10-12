@@ -1,6 +1,7 @@
 const Pokemon = require('./Pokemon'),
       types = require('../types'),
-      attacks = require('../attack/attacks');
+      attacks = require('../attack/attacks'),
+      protoInheritance = require('../util/protoInheritance');
 
 const { DefenseCurl } = attacks;
 
@@ -18,7 +19,4 @@ function Jigglypuff(nickname) {
     this.speed = 20;
 }
 
-Jigglypuff.prototype = Object.create(Pokemon.prototype);
-Jigglypuff.prototype.constructor = Jigglypuff;
-
-module.exports = Jigglypuff;
+module.exports = protoInheritance({ base: Jigglypuff, super: Pokemon });
