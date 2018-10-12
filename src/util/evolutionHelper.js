@@ -1,14 +1,9 @@
 const evolutionHelper = args => {
-    const isPokemonValid = args.pokemon instanceof args._constructor;
-    
-    if(args.pokemon !== undefined && isPokemonValid) {
-        const pokemon = {};
+    const isPokemonValid = args.pokemon instanceof args.super;
 
-        Object.assign(pokemon, args.pokemon);
-        
-        return pokemon;
-    }
-    return new args._constructor;
+    args.pokemon !== undefined && isPokemonValid 
+    ? Object.assign(args.base, args.pokemon)
+    : Object.assign(args.base, new args.super);
 }
 
 module.exports = evolutionHelper;
