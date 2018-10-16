@@ -14,6 +14,5 @@ function Nidorina(nickname, nidoran) {
     this.spDefense = 55;
     this.speed = 56;
 }
-protoInheritance({ base: Nidorina, super: NidoranFemale });
 
-module.exports = Nidorina;
+module.exports = protoInheritance({ base: Nidorina, super: NidoranFemale });
