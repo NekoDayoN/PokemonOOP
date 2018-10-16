@@ -12,7 +12,7 @@ const pokemons = [
     'Ekans', 'Arbok',
     'Pikachu', 'Raichu',
     'Sandshrew', 'Sandslash',
-    'NidoranFemale',
+    'NidoranFemale', 'Nidorina',
     'NidoranMale',
     'Clefairy',
     'Vulpix',
