@@ -14,7 +14,7 @@ const pokemons = [
     'Sandshrew', 'Sandslash',
     'NidoranFemale', 'Nidorina', 'Nidoqueen',
     'NidoranMale', 'Nidorino', 'Nidoking',
-    'Clefairy',
+    'Clefairy', 'Clefable',
     'Vulpix',
     'Jigglypuff',
     'Zubat',
