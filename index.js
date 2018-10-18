@@ -1,5 +1,5 @@
-const { Clefable } = require('./src/pokemons/pokemons');
+const { Ninetales } = require('./src/pokemons/pokemons');
 
-const pokemon = new Clefable();
+const pokemon = new Ninetales();
 
 console.log(pokemon);

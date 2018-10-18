@@ -15,7 +15,7 @@ const pokemons = [
     'NidoranFemale', 'Nidorina', 'Nidoqueen',
     'NidoranMale', 'Nidorino', 'Nidoking',
     'Clefairy', 'Clefable',
-    'Vulpix',
+    'Vulpix', 'Ninetales',
     'Jigglypuff',
     'Zubat',
     'Oddish'
