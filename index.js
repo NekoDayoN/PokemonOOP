@@ -1,5 +1,5 @@
-const { Golbat } = require('./src/pokemons/pokemons');
+const { Gloom } = require('./src/pokemons/pokemons');
 
-const pokemon = new Golbat();
+const pokemon = new Gloom();
 
 console.log(pokemon);
