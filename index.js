@@ -1,5 +1,5 @@
-const { Vileplume } = require('./src/pokemons/pokemons');
+const { Paras } = require('./src/pokemons/pokemons');
 
-const pokemon = new Vileplume();
+const pokemon = new Paras();
 
 console.log(pokemon);

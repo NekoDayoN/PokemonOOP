@@ -18,7 +18,8 @@ const pokemons = [
     'Vulpix', 'Ninetales',
     'Jigglypuff', 'Wigglypuff',
     'Zubat', 'Golbat',
-    'Oddish', 'Gloom', 'Vileplume'
+    'Oddish', 'Gloom', 'Vileplume',
+    'Paras'
 ];
 
 module.exports = multiFileLoader(__dirname + '/', pokemons);
