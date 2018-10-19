@@ -7,6 +7,7 @@ const { SandAttack, Scratch } = attacks;
 
 function Diglett(nickname) {
     this.name = "Digglet";
+    this.nickname = nickname || "";
     this.level = 1;
     this.hp = 10;
     this.attack = 55;
