@@ -1,5 +1,5 @@
-const { Diglett } = require('./src/pokemons/pokemons');
+const { Meowth } = require('./src/pokemons/pokemons');
 
-const pokemon = new Diglett();
+const pokemon = new Meowth();
 
 console.log(pokemon);
