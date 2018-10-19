@@ -1,5 +1,5 @@
-const { Paras } = require('./src/pokemons/pokemons');
+const { Parasect } = require('./src/pokemons/pokemons');
 
-const pokemon = new Paras();
+const pokemon = new Parasect();
 
 console.log(pokemon);
