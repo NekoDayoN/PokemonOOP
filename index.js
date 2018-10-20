@@ -1,5 +1,5 @@
-const { Growlithe } = require('./src/pokemons/pokemons');
+const { Arcanine } = require('./src/pokemons/pokemons');
 
-const pokemon = new Growlithe();
+const pokemon = new Arcanine();
 
 console.log(pokemon);
