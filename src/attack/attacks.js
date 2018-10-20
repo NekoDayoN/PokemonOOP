@@ -22,7 +22,8 @@ const attacks = [
     "Confusion",
     "Gust",
     "FuryAttack",
-    "SandAttack"
+    "SandAttack",
+    "Teleport"
 ];
 
 module.exports = multiFileLoader(__dirname + '/', attacks);

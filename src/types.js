@@ -11,7 +11,8 @@ const types = {
     flying: 'flying',
     eletric: 'eletric',
     fairy: 'fairy',
-    fighting: 'fighting'
+    fighting: 'fighting',
+    psychic: 'psychic'
 };
 
 module.exports = types;
