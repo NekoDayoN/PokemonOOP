@@ -10,7 +10,8 @@ const types = {
     normal: 'normal',
     flying: 'flying',
     eletric: 'eletric',
-    fairy: 'fairy'
+    fairy: 'fairy',
+    fighting: 'fighting'
 };
 
 module.exports = types;
