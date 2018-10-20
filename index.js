@@ -1,5 +1,5 @@
-const { Primeape } = require('./src/pokemons/pokemons');
+const { Growlithe } = require('./src/pokemons/pokemons');
 
-const pokemon = new Primeape();
+const pokemon = new Growlithe();
 
 console.log(pokemon);

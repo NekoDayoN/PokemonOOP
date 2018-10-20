@@ -6,7 +6,6 @@ const { Scratch } = require('../attack/attacks');
 
 function Psyduck(nickname) {
     Pokemon.call(this, "Psyduck");
-    this.name = "Psyduck";
     this.nickname = nickname || "";
     this.types = [ types.water ];
     this.attacks = [ new Scratch ];
