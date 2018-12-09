@@ -27,7 +27,8 @@ const pokemons = [
     'Mankey', 'Primeape',
     'Growlithe', 'Arcanine',
     'Poliwag', 'Poliwhirl', 'Poliwrath',
-    'Abra', 'Kadabra', 'Alakazam'
+    'Abra', 'Kadabra', 'Alakazam',
+    'Machop'
 ];
 
 module.exports = multiFileLoader(__dirname + '/', pokemons);
